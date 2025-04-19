@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Georgia&family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Audio Element -->
+  <audio id="background-music" loop>
+    <source src="assets/01-Monk-Turner-Fascinoma-Its-Your-Birthday(chosic.com).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p class="music-hint">Tap anywhere to play soft music 🎵</p>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="section active">
+    <div class="container">
+      <div class="hearts"></div>
+      <div class="welcome-box">
+        <h1>For the Love of My Life</h1>
+        <p>"Every birthday is special, but yours is my favorite celebration of our beautiful love."</p>
+        <button class="enter-btn" onclick="showSection('letter')">Enter</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Love Letter Section -->
+  <section id="letter" class="section">
+    <div class="letter-container">
+      <div class="paper">
+        <h1>My Dearest Love,</h1>
+        <p id="letter-text">
+          On your special day, your radiant smile lights up the world, with those captivating eyes that sparkle like stars, drawing everyone in with their warmth. Your lips, soft and perfectly shaped, add a touch of elegance to your stunning presence, while your biteable cheeks glow with a youthful charm that's utterly irresistible. With hair like silk, you carry a grace that's truly mesmerizing, and your gentle spirit shines brightly, making every moment magical. Today, we celebrate the beauty of your heart and soul, as you bloom like a flower, growing more stunning with each passing year. May this birthday shower you with love, laughter, and endless happiness, bringing you dreams fulfilled and peace profound. Happy birthday to a truly beautiful soul, inside and out!
+        </p>
+        <p class="signature">Forever Yours, <br> ❤️ Pranay</p>
+      </div>
+      <button class="gallery-btn" onclick="showSection('gallery')">💞 View Memories</button>
+      <button class="back-btn" onclick="showSection('welcome')">← Back</button>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <h1>Moments I Cherish 💝</h1>
+    <div class="gallery">
+      <!-- Real photos -->
+      <div class="gallery-img">
+        <img src="assets/image1.jpg" alt="Beautiful memory 1">
+      </div>
+      <div class="gallery-img">
+        <img src="assets/image2.jpg" alt="Beautiful memory 2">
+      </div>
+      <div class="gallery-img">
+        <img src="assets/image3.jpg" alt="Beautiful memory 3">
+      </div>
+      <div class="gallery-img">
+        <img src="assets/image4.jpg" alt="Beautiful memory 4">
+      </div>
+      <div class="gallery-img">
+        <img src="assets/image5.jpg" alt="Beautiful memory 5">
+      </div>
+      <div class="gallery-img">
+        <img src="assets/image6.jpg" alt="Beautiful memory 6">
+      </div>
+    </div>
+    <button class="surprise-btn" onclick="showSection('surprise')">Surprise</button>
+    <button class="back-btn" onclick="showSection('letter')">← Back to Love Letter</button>
+  </section>
+
+  <!-- Surprise Section -->
+  <section id="surprise" class="section">
+    <div class="rose-petals"></div>
+    <div class="sparkles"></div>
+    <div class="final-message">
+      <h2>Happy Birthday, My Beautiful Tortoise! 🎂</h2>
+      <p>
+        May your day bloom with the tender glow of love, your heart dance with joy, and every moment reflect the beauty you bring to my world. You are my serene treasure, and I wish you a year wrapped in the sweetest affection. I love you beyond measure.
+      </p>
+      <button class="back-btn" onclick="showSection('welcome')">← Back to Start</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
